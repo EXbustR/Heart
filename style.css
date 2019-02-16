@@ -6,8 +6,37 @@ body{
     align-items: center;
     min-height: 100vh;
     background: radial-gradient(#ff0000, #5a0000);
-    
+    /* animation: animate 1s linear infinite; */
 }
+
+/* animation */
+@keyframes animate{
+    0%
+    {
+        transform:  rotate(45deg) scale(.2);
+    }
+    20%
+    {
+        transform:  rotate(45deg) scale(.4);
+    }
+    40%
+    {
+        transform:  rotate(45deg) scale(.8);
+    }
+    60%
+    {
+        transform:  rotate(45deg) scale(1);
+    }
+    80%
+    {
+        transform:  rotate(45deg) scale(.8);
+    }
+    100%
+    {
+        transform:  rotate(45deg) scale(.2);
+    }
+}
+
 .heart{
     position: relative;
     width: 200px;
@@ -15,6 +44,7 @@ body{
     background: #e80202;
     transform: rotate(43deg);
     box-shadow: 30px 30px 200px rgba(0, 0, 0, 0.589);
+    animation: animate 1s linear infinite;
 }
 .heart:before{
     content:'';
